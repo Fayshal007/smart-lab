@@ -2,7 +2,7 @@ import { GiArchiveResearch } from "react-icons/gi";
 const Header = () => {
   return (
     <>
-      <div className="navbar bg-black text-white">
+      <div className="navbar bg-[#228B22] text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,114 +23,102 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-52 p-2"
+              className="menu menu-sm dropdown-content bg-[#228B22] text-white rounded-box z-[1] mt-3 w-52 p-2"
             >
-              <li>
+              <li className="hover:bg-[#50C878] hover:text-black rounded">
                 <a>Home</a>
               </li>
-              <li>
-                <a>Members</a>
+              <li >
+                <a className="hover:bg-[#50C878] hover:text-black rounded">Members</a>
                 <ul className="p-2">
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Director</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Postdocs</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a> Ph.D Students</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>M.S. Students</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Alumni</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a>Research</a>
+                <a className="hover:bg-[#50C878] hover:text-black rounded">Research</a>
                 <ul className="p-2">
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Machine Learning</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Bio-informatics</a>
                   </li>
                 </ul>
               </li>
-              <li>
+              <li className="hover:bg-[#50C878] hover:text-black rounded">
                 <a>Publications</a>
               </li>
-              <li>
-                <a>IoD Site</a>
-              </li>
-              <li>
-                <a>Activities</a>
-              </li>
-              <li>
+              <li className="hover:bg-[#50C878] hover:text-black rounded">
                 <a>Contact</a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl font-bold"><GiArchiveResearch /> Smart Lab</a>
+          <a className="btn hover:bg-[#50C878] hover:text-black text-3xl font-bold"><GiArchiveResearch /> Smart Lab</a>
         </div>
-        <div className="navbar-center hidden lg:flex ">
+        <div className="navbar-center hidden lg:flex font-bold">
           <ul className="menu menu-horizontal px-1">
-            <li>
+            <li className="hover:bg-[#50C878] hover:text-black rounded">
               <a>Home</a>
             </li>
-            <li>
+            <li className="hover:bg-[#50C878] hover:text-black rounded">
               <details>
                 <summary>Members</summary>
-                <ul className="p-2 bg-black text-white">
-                  <li>
+                <ul className="p-2 bg-[#228B22] text-white">
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Director</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Postdocs</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a> Ph.D Students</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>M.S. Students</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Alumni</a>
                   </li>
                 </ul>
               </details>
             </li>
-            <li>
+            <li className="hover:bg-[#50C878] hover:text-black rounded">
               <details>
                 <summary>Research</summary>
-                <ul className="p-2 bg-black text-white">
-                  <li>
+                <ul className="p-2 bg-[#228B22] text-white">
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Machine Learning</a>
                   </li>
-                  <li>
+                  <li className="hover:bg-[#50C878] hover:text-black rounded">
                     <a>Bio-informatics</a>
                   </li>
                 </ul>
               </details>
             </li>
-            <li>
+            <li className="hover:bg-[#50C878] hover:text-black rounded">
               <a>Publications</a>
             </li>
-            <li>
-              <a>IoD Site</a>
-            </li>
-            <li>
-              <a>Activities</a>
-            </li>
-            <li>
+            <li className="hover:bg-[#50C878] hover:text-black rounded">
               <a>Contact</a>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Login</a>
+        <div className="navbar-end ">
+          <a className="btn hover:bg-[#50C878] hover:text-black rounded font-bold">Login</a>
         </div>
       </div>
     </>
