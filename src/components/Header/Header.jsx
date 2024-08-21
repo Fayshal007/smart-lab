@@ -1,4 +1,5 @@
 import { GiArchiveResearch } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -26,72 +27,72 @@ const Header = () => {
               className="menu menu-sm dropdown-content bg-[#228B22] text-white rounded-box z-[1] mt-3 w-52 p-2"
             >
               <li className="hover:bg-[#50C878] hover:text-black rounded">
-                <a>Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li >
-                <a className="hover:bg-[#50C878] hover:text-black rounded">Members</a>
+                <NavLink className="hover:bg-[#50C878] hover:text-black rounded">Members</NavLink>
                 <ul className="p-2">
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Director</a>
+                    <NavLink to="/director">Director</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Postdocs</a>
+                    <NavLink to="/postdocs">Postdocs</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a> Ph.D Students</a>
+                    <NavLink to="/phdstudents"> Ph.D Students</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>M.S. Students</a>
+                    <NavLink to="/msstudents">M.S. Students</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Alumni</a>
+                    <NavLink to="/alumni">Alumni</NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <a className="hover:bg-[#50C878] hover:text-black rounded">Research</a>
+                <NavLink className="hover:bg-[#50C878] hover:text-black rounded">Research</NavLink>
                 <ul className="p-2">
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Machine Learning</a>
+                    <NavLink to="/machinelearning">Machine Learning</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Bio-informatics</a>
+                    <NavLink to="/biosensor">Bio-sensor</NavLink>
                   </li>
                 </ul>
               </li>
               <li className="hover:bg-[#50C878] hover:text-black rounded">
-                <a>Publications</a>
+                <NavLink to="/publication">Publications</NavLink>
               </li>
               <li className="hover:bg-[#50C878] hover:text-black rounded">
-                <a>Contact</a>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn hover:bg-[#50C878] hover:text-black text-3xl font-bold"><GiArchiveResearch /> Smart Lab</a>
+          <NavLink to="/" className="btn hover:bg-[#50C878] hover:text-black text-3xl font-bold"><GiArchiveResearch /> Smart Lab</NavLink>
         </div>
         <div className="navbar-center hidden lg:flex font-bold">
           <ul className="menu menu-horizontal px-1">
             <li className="hover:bg-[#50C878] hover:text-black rounded">
-              <a>Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li className="hover:bg-[#50C878] hover:text-black rounded">
               <details>
                 <summary>Members</summary>
                 <ul className="p-2 bg-[#228B22] text-white">
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Director</a>
+                    <NavLink to="/director">Director</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Postdocs</a>
+                    <NavLink to="/postdocs">Postdocs</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a> Ph.D Students</a>
+                    <NavLink to="/phdstudents"> Ph.D Students</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>M.S. Students</a>
+                    <NavLink to="/msstudents">M.S. Students</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Alumni</a>
+                    <NavLink to="/alumni">Alumni</NavLink>
                   </li>
                 </ul>
               </details>
@@ -101,19 +102,19 @@ const Header = () => {
                 <summary>Research</summary>
                 <ul className="p-2 bg-[#228B22] text-white">
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Machine Learning</a>
+                    <NavLink to="/machinelearning">Machine Learning</NavLink>
                   </li>
                   <li className="hover:bg-[#50C878] hover:text-black rounded">
-                    <a>Bio-informatics</a>
+                    <NavLink to="/biosensor">Bio-sensor</NavLink>
                   </li>
                 </ul>
               </details>
             </li>
             <li className="hover:bg-[#50C878] hover:text-black rounded">
-              <a>Publications</a>
+              <NavLink to="/publication">Publications</NavLink>
             </li>
             <li className="hover:bg-[#50C878] hover:text-black rounded">
-              <a>Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
